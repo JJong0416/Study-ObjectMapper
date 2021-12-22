@@ -10,7 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import java.util.Date;
 
 @ContextConfiguration(classes = {ApplicationConfig.class})
-public class ModelMapperTest {
+public class ModelUserMapperTest {
 
     @Autowired
     ModelMapper modelMapper = new ModelMapper();
@@ -48,7 +48,5 @@ public class ModelMapperTest {
 //        // DTO -> Entity, Setter가 없을 시 변환할 수 없음
         UserEntity resultEntity = modelMapper.map(resultDTO, UserEntity.class);
 
-        System.out.println(resultDTO);
-        System.out.println(resultEntity);
     }
 }

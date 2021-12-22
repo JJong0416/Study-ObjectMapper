@@ -16,7 +16,7 @@ public class UserEntity {
 
     @Builder
     private UserEntity(Long id, String password, String name,
-                       String nickName, Date createDate) {
+               String nickName, Date createDate) {
         this.id = id;
         this.password = password;
         this.name = name;
